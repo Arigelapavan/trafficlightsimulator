@@ -1,0 +1,45 @@
+/* Traffic light container */
+.traffic-light {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Adjust spacing between lights */
+    align-items: center;
+    width: 100px; /* Make sure the container width fits the lights */
+    height: 300px; /* Adjust height */
+    background-color: #333; /* Dark background for the traffic light */
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a shadow for visual effect */
+  }
+  
+  /* Lights common style */
+  .light {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 10px 0; /* Add vertical margin to space out lights */
+    opacity: 0.3; /* Dim inactive lights */
+    transition: opacity 0.3s ease; /* Smooth transition for light changes */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+  }
+  
+  /* Specific colors for each light */
+  .light.green {
+    background-color: green;
+  }
+  
+  .light.yellow {
+    background-color: yellow;
+  }
+  
+  .light.red {
+    background-color: red;
+  }
+  
+  /* Active light effect */
+  .light.active {
+    opacity: 1; /* Brighten the active light */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8); /* Glow effect for active light */
+  }
+  

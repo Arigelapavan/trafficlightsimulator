@@ -27,6 +27,32 @@
 .App-link {
   color: #61dafb;
 }
+.traffic-light {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+  margin: 0 auto;
+}
+
+.light {
+  width: 80px;
+  height: 80px;
+  margin: 10px 0;
+  border-radius: 50%;
+  opacity: 0.2;
+}
+
+.on {
+  opacity: 1;
+}
+
+.pedestrian-signal {
+  margin-top: 10px;
+  font-size: 18px;
+  color: red;
+}
+
 
 @keyframes App-logo-spin {
   from {

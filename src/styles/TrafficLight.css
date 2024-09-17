@@ -1,0 +1,39 @@
+/* src/styles/TrafficLight.css */
+
+.traffic-light {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 120px;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .light {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 10px 0;
+    opacity: 0.3;
+    transition: opacity 0.3s ease;
+  }
+  
+  .light.green {
+    background-color: green;
+  }
+  
+  .light.yellow {
+    background-color: yellow;
+  }
+  
+  .light.red {
+    background-color: red;
+  }
+  
+  .light.active {
+    opacity: 1;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+  }
+  
